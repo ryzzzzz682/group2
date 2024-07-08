@@ -4,18 +4,24 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif; /* Modern font similar to Google */
+    background-color: #f9f9f9; /* Light background color */
+    color: #333; /* Default text color */
 }
 
 /* Styling for top-right links */
 .top-right {
     text-align: right;
-    padding: 10px;
+    padding: 20px;
+    background-color: #fff; /* White background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
 }
 
 .top-right a {
-    margin-left: 10px;
+    margin-left: 15px;
     text-decoration: none;
-    color: #333; /* Dark gray color */
+    color: #4285f4; /* Google blue */
+    font-weight: 500; /* Slightly bold */
 }
 
 .top-right a:hover {
@@ -25,34 +31,46 @@ html, body {
 /* Styling for search container */
 .search-container {
     max-width: 600px;
-    margin: 50px auto;
+    margin: 100px auto;
     text-align: center;
+    background-color: #fff; /* White background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
 }
 
 .search-bar {
-    width: 70%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc; /* Light gray border */
-    border-radius: 4px;
-    box-sizing: border-box; /* Ensures padding and border are included in width */
-    display: block;
+    width: 80%;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #ddd; /* Lighter border */
+    border-radius: 24px; /* Rounded corners */
+    box-sizing: border-box;
     margin: 0 auto; /* Centering the search bar */
+    transition: border-color 0.2s;
+}
+
+.search-bar:focus {
+    border-color: #4285f4; /* Google blue border on focus */
+    outline: none; /* Remove default outline */
 }
 
 .buttons {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .search-button {
-    padding: 10px 20px;
+    padding: 12px 24px;
     font-size: 16px;
-    background-color: #f2f2f2; /* Light gray background */
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    background-color: #4285f4; /* Google blue background */
+    color: #fff; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 24px; /* Rounded corners */
     cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
 }
 
 .search-button:hover {
-    background-color: #e0e0e0; /* Lighter gray background on hover */
+    background-color: #357ae8; /* Darker blue on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
 }

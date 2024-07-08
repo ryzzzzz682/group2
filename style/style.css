@@ -1,12 +1,13 @@
 /* styles.css */
 
 /* Reset default margin and padding */
-html, body {
+body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif; /* Modern font similar to Google */
     background-color: #f9f9f9; /* Light background color */
     color: #333; /* Default text color */
+    
 }
 
 /* Styling for top-right links */
@@ -73,4 +74,37 @@ html, body {
 .search-button:hover {
     background-color: #357ae8; /* Darker blue on hover */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.footer-country {
+    font-size: 14px;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
 }

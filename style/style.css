@@ -1,0 +1,58 @@
+/* styles.css */
+
+/* Reset default margin and padding */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for top-right links */
+.top-right {
+    text-align: right;
+    padding: 10px;
+}
+
+.top-right a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #333; /* Dark gray color */
+}
+
+.top-right a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for search container */
+.search-container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.search-bar {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding and border are included in width */
+    display: block;
+    margin: 0 auto; /* Centering the search bar */
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f2f2f2; /* Light gray background */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #e0e0e0; /* Lighter gray background on hover */
+}

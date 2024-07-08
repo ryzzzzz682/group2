@@ -1,5 +1,54 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Dashboard</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&display=swap">
+</head>
+<body>
+    
+    <div class="top-right">
+        <a href="index.html">Search</a>
+        <a href="advanced.html">Advanced Search</a>
+    </div>
 
+    <div class="search-container">
+        <div class="logo">
+            <h1>
+                <span>G</span>
+                <span>o</span>
+                <span>o</span>
+                <span>g</span>
+                <span>l</span>
+                <span>e</span>
+                <br>
+                <p>Images</p>
+            </h1>
+        </div>
+        <form action="https://www.google.com/search" method="GET">
+            <input type="text" name="q" class="search-bar" placeholder="Search..." >
+            <div class="buttons">
+                <input type="submit" value="Google Search" class="search-button">
+                <input type="submit" value="I'm Feeling Lucky" class="search-button" onclick="this.form.action='https://www.google.com/search?btnI=I';">
+            </div>
+        </form>
+    </div>
 
-
+    <footer>
+        <div class="footer-container">
+            <div class="footer-country">Philippines</div>
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search works</a>
+                <a href="#">Terms and Privacy</a>
+                <a href="#">Settings</a>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
+/

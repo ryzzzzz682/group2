@@ -1,59 +1,55 @@
-/* styles.css */
-
-/* Reset default margin and padding */
 body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif; /* Modern font similar to Google */
-    background-color: #f9f9f9; /* Light background color */
-    color: #333; /* Default text color */
-    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-/* Styling for top-right links */
 .top-right {
-    text-align: right;
-    padding: 20px;
-    background-color: #fff; /* White background */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .top-right a {
     margin-left: 15px;
     text-decoration: none;
-    color: #4285f4; /* Google blue */
-    font-weight: 500; /* Slightly bold */
+    color: #1a73e8;
+    font-size: 14px;
 }
 
-.top-right a:hover {
-    text-decoration: underline;
-}
-
-/* Styling for search container */
 .search-container {
-    max-width: 600px;
-    margin: 100px auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    background-color: #fff; /* White background */
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+    padding: 20px;
+}
+
+.search-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
 }
 
 .search-bar {
-    width: 80%;
-    padding: 15px;
+    width: 100%;
+    padding: 10px 20px;
     font-size: 18px;
-    border: 1px solid #ddd; /* Lighter border */
-    border-radius: 24px; /* Rounded corners */
-    box-sizing: border-box;
-    margin: 0 auto; /* Centering the search bar */
-    transition: border-color 0.2s;
-}
-
-.search-bar:focus {
-    border-color: #4285f4; /* Google blue border on focus */
-    outline: none; /* Remove default outline */
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    outline: none;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
 }
 
 .buttons {
@@ -61,50 +57,117 @@ body {
 }
 
 .search-button {
-    padding: 12px 24px;
-    font-size: 16px;
-    background-color: #4285f4; /* Google blue background */
-    color: #fff; /* White text */
-    border: none; /* Remove default border */
-    border-radius: 24px; /* Rounded corners */
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.2s, box-shadow 0.2s;
+    margin-right: 6px;
 }
 
 .search-button:hover {
-    background-color: #357ae8; /* Darker blue on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    margin-top: auto;
+    border-color: #dadce0;
 }
 
 .footer-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0 20px;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #e4e4e4;
 }
 
 .footer-country {
     font-size: 14px;
+    color: #70757a;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .footer-links a {
-    color: #fff;
     margin: 0 10px;
-    text-decoration: none;
+    color: #1a73e8;
     font-size: 14px;
+    text-decoration: none;
 }
 
-.footer-links a:hover {
-    text-decoration: underline;
+@font-face {
+    font-family: 'Google Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+.logo h1 {
+    font-family: 'Google Sans', sans-serif;
+    font-size: 64px;
+    color: #4285f4;
+    margin: 0;
+    font-weight: 700;
+}
+
+.logo h1 p {
+    font-size: 15px;
+    color: #3c4043;
+    text-align: right;
+}
+
+.advanced-search-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: left;
+}
+
+.advanced-search-container form {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+.field {
+    margin-bottom: 15px;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 5px;
+    color: #202124;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #dfe1e5;
+    border-radius: 4px;
+    outline: none;
+    background-color: #fff;
+    color: #202124;
+}
+
+.search-button {
+    background-color: #1a73e8;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #1558b6;
 }

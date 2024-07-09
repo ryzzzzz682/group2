@@ -171,3 +171,69 @@ body {
 .search-button:hover {
     background-color: #1558b6;
 }
+
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the header and navbar */
+header {
+    background-color: #4285f4; /* Google blue */
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    background-color: #3c78dc; /* Darker shade of Google blue on hover */
+}
+
+/* Content styling */
+.content {
+    padding: 20px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #f2f2f2;
+    padding: 10px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+}
+
+.footer-links a {
+    color: #70757a; /* Google gray */
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #4285f4; /* Google blue on hover */
+}

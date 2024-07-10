@@ -237,3 +237,67 @@ footer {
 .footer-links a:hover {
     color: #4285f4; /* Google blue on hover */
 }
+@font-face {
+    font-family: 'Google Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  }
+  .logo span {
+      display: inline-block;
+      font-size: 64px;
+      font-weight: 700;
+      text-align: center;
+      font-size: 64px;
+
+      
+      &:nth-child(7n+1) { color: blue; }
+      &:nth-child(7n+2) { color: red; }
+      &:nth-child(7n+3) { color: yellow; }
+      &:nth-child(7n+4) { color: blue; }
+      &:nth-child(7n+5) { color: green; }
+      &:nth-child(7n+6) { color: red; }
+
+  }
+
+  .logo h1 {
+    font-family: 'Google Sans', sans-serif;
+    font-size: 64px;
+    color: #4285f4;
+    margin: 0;
+    font-weight: 700;
+}
+.logo h1 p{
+    font-size: 15px;
+    color: #3c4043;
+    text-align: right;
+}
+
+.advanced-search-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: left;
+}
+
+.advanced-search-container form {
+    width: 100%;
+    max-width: 600px;
+    background-color: #303134;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+.field {
+    margin-bottom: 15px;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 5px;
+    color: #e8eaed;
+}
